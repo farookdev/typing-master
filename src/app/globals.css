@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #FEF3C7;
+  --color-lavender: #E9D5FF;
+  --color-deep-purple: #581C87;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: linear-gradient(135deg, #FEF3C7 0%, #E9D5FF 50%, #DBEAFE 100%);
+  min-height: 100vh;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: local('JetBrains Mono'), local('Courier New');
+}

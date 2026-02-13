@@ -1,0 +1,502 @@
+{
+  "lessons": [
+    {
+      "id": 1,
+      "level": 1,
+      "title": "Meet F and D",
+      "description": "Learn your first two keys with your left hand!",
+      "targetKeys": ["f", "d"],
+      "fingers": { "f": "left-index", "d": "left-middle" },
+      "exercises": [
+        { "type": "practice", "text": "fff ddd fdf dfd", "hints": true },
+        { "type": "practice", "text": "fd df ff dd ffd ddf", "hints": true },
+        { "type": "test", "text": "fdf dfd ffd ddf fdfd dfdf", "hints": false, "minAccuracy": 80 }
+      ],
+      "unlockRequirement": null
+    },
+    {
+      "id": 2,
+      "level": 1,
+      "title": "Meet J and K",
+      "description": "Now let's try the right hand!",
+      "targetKeys": ["j", "k"],
+      "fingers": { "j": "right-index", "k": "right-middle" },
+      "exercises": [
+        { "type": "practice", "text": "jjj kkk jkj kjk", "hints": true },
+        { "type": "practice", "text": "jk kj jjk kkj jkjk", "hints": true },
+        { "type": "test", "text": "jk kj jjk kkj jkjk kjkj", "hints": false, "minAccuracy": 80 }
+      ],
+      "unlockRequirement": { "lessonId": 1, "minStars": 1 }
+    },
+    {
+      "id": 3,
+      "level": 1,
+      "title": "Left Meets Right",
+      "description": "Combine both hands together!",
+      "targetKeys": ["f", "d", "j", "k"],
+      "fingers": { "f": "left-index", "d": "left-middle", "j": "right-index", "k": "right-middle" },
+      "exercises": [
+        { "type": "practice", "text": "fj dk jf kd fjdk", "hints": true },
+        { "type": "practice", "text": "fjdk jfkd dkfj kdjf", "hints": true },
+        { "type": "test", "text": "fj dk jf kd fjdk jfkd dkfj", "hints": false, "minAccuracy": 80 }
+      ],
+      "unlockRequirement": { "lessonId": 2, "minStars": 1 }
+    },
+    {
+      "id": 4,
+      "level": 1,
+      "title": "Say Hello to A",
+      "description": "Your left pinky gets to work!",
+      "targetKeys": ["a", "f", "d", "j", "k"],
+      "fingers": { "a": "left-pinky", "f": "left-index", "d": "left-middle", "j": "right-index", "k": "right-middle" },
+      "exercises": [
+        { "type": "practice", "text": "aaa afd ada fad", "hints": true },
+        { "type": "practice", "text": "afd dfa fad dad aak", "hints": true },
+        { "type": "test", "text": "add fad dad aff dak adf", "hints": false, "minAccuracy": 80 }
+      ],
+      "unlockRequirement": { "lessonId": 3, "minStars": 1 }
+    },
+    {
+      "id": 5,
+      "level": 1,
+      "title": "L and Semicolon Join",
+      "description": "Right ring and pinky fingers step up!",
+      "targetKeys": ["l", ";", "j", "k"],
+      "fingers": { "l": "right-ring", ";": "right-pinky", "j": "right-index", "k": "right-middle" },
+      "exercises": [
+        { "type": "practice", "text": "lll jkl ljk klj", "hints": true },
+        { "type": "practice", "text": "jkl lkj ljk all fall", "hints": true },
+        { "type": "test", "text": "jkl lkj all fall lak jal", "hints": false, "minAccuracy": 80 }
+      ],
+      "unlockRequirement": { "lessonId": 4, "minStars": 1 }
+    },
+    {
+      "id": 6,
+      "level": 1,
+      "title": "S Slides In",
+      "description": "Left ring finger learns its key!",
+      "targetKeys": ["s", "a", "d", "f"],
+      "fingers": { "s": "left-ring", "a": "left-pinky", "d": "left-middle", "f": "left-index" },
+      "exercises": [
+        { "type": "practice", "text": "sss sad fas lass", "hints": true },
+        { "type": "practice", "text": "sass sad fas askslass", "hints": true },
+        { "type": "test", "text": "sad lass sass asks fads dask", "hints": false, "minAccuracy": 80 }
+      ],
+      "unlockRequirement": { "lessonId": 5, "minStars": 1 }
+    },
+    {
+      "id": 7,
+      "level": 1,
+      "title": "Home Row Party",
+      "description": "All home row keys together!",
+      "targetKeys": ["a", "s", "d", "f", "j", "k", "l", ";"],
+      "fingers": { "a": "left-pinky", "s": "left-ring", "d": "left-middle", "f": "left-index", "j": "right-index", "k": "right-middle", "l": "right-ring", ";": "right-pinky" },
+      "exercises": [
+        { "type": "practice", "text": "ask lad sad dad lass", "hints": true },
+        { "type": "practice", "text": "flask salad fallslassask", "hints": true },
+        { "type": "test", "text": "dad asks a sad lad falls", "hints": false, "minAccuracy": 80 }
+      ],
+      "unlockRequirement": { "lessonId": 6, "minStars": 1 }
+    },
+    {
+      "id": 8,
+      "level": 1,
+      "title": "Home Row Sentences",
+      "description": "Type real sentences with home row!",
+      "targetKeys": ["a", "s", "d", "f", "j", "k", "l", ";"],
+      "fingers": { "a": "left-pinky", "s": "left-ring", "d": "left-middle", "f": "left-index", "j": "right-index", "k": "right-middle", "l": "right-ring", ";": "right-pinky" },
+      "exercises": [
+        { "type": "practice", "text": "a sad lad asks dad", "hints": true },
+        { "type": "practice", "text": "a lass falls; dad adds a salad", "hints": true },
+        { "type": "test", "text": "a sad lad asks dad; a lass falls", "hints": false, "minAccuracy": 80 }
+      ],
+      "unlockRequirement": { "lessonId": 7, "minStars": 1 }
+    },
+    {
+      "id": 9,
+      "level": 2,
+      "title": "E and I Arrive",
+      "description": "Reach up for E and I!",
+      "targetKeys": ["e", "i"],
+      "fingers": { "e": "left-middle", "i": "right-middle" },
+      "exercises": [
+        { "type": "practice", "text": "fee die see kid side", "hints": true },
+        { "type": "practice", "text": "deed feed seed lie die", "hints": true },
+        { "type": "test", "text": "feel like a seed dies if kids feed", "hints": false, "minAccuracy": 80 }
+      ],
+      "unlockRequirement": { "lessonId": 8, "minStars": 1 }
+    },
+    {
+      "id": 10,
+      "level": 2,
+      "title": "R and U Step Up",
+      "description": "Index fingers reach to R and U!",
+      "targetKeys": ["r", "u"],
+      "fingers": { "r": "left-index", "u": "right-index" },
+      "exercises": [
+        { "type": "practice", "text": "fur ruff rule surf", "hints": true },
+        { "type": "practice", "text": "sure fire rules used ride", "hints": true },
+        { "type": "test", "text": "sure rules require fire and desire", "hints": false, "minAccuracy": 80 }
+      ],
+      "unlockRequirement": { "lessonId": 9, "minStars": 1 }
+    },
+    {
+      "id": 11,
+      "level": 2,
+      "title": "T and Y Team Up",
+      "description": "Index fingers stretch to T and Y!",
+      "targetKeys": ["t", "y"],
+      "fingers": { "t": "left-index", "y": "right-index" },
+      "exercises": [
+        { "type": "practice", "text": "try yet stay July", "hints": true },
+        { "type": "practice", "text": "truly thirty years style", "hints": true },
+        { "type": "test", "text": "thirty years yet truly ready", "hints": false, "minAccuracy": 80 }
+      ],
+      "unlockRequirement": { "lessonId": 10, "minStars": 1 }
+    },
+    {
+      "id": 12,
+      "level": 2,
+      "title": "W and O Join In",
+      "description": "Ring fingers reach for W and O!",
+      "targetKeys": ["w", "o"],
+      "fingers": { "w": "left-ring", "o": "right-ring" },
+      "exercises": [
+        { "type": "practice", "text": "wow low row owe owl", "hints": true },
+        { "type": "practice", "text": "work word wood flow slow", "hints": true },
+        { "type": "test", "text": "two owls flew over the low tower", "hints": false, "minAccuracy": 80 }
+      ],
+      "unlockRequirement": { "lessonId": 11, "minStars": 1 }
+    },
+    {
+      "id": 13,
+      "level": 2,
+      "title": "Q and P Complete It",
+      "description": "Pinkies reach for Q and P!",
+      "targetKeys": ["q", "p"],
+      "fingers": { "q": "left-pinky", "p": "right-pinky" },
+      "exercises": [
+        { "type": "practice", "text": "quit quip pout equip", "hints": true },
+        { "type": "practice", "text": "quest quiet pour sip quip", "hints": true },
+        { "type": "test", "text": "a quiet quail quickly quips at people", "hints": false, "minAccuracy": 80 }
+      ],
+      "unlockRequirement": { "lessonId": 12, "minStars": 1 }
+    },
+    {
+      "id": 14,
+      "level": 2,
+      "title": "Top Row Mix",
+      "description": "Practice all top row keys!",
+      "targetKeys": ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p"],
+      "fingers": { "q": "left-pinky", "w": "left-ring", "e": "left-middle", "r": "left-index", "t": "left-index", "y": "right-index", "u": "right-index", "i": "right-middle", "o": "right-ring", "p": "right-pinky" },
+      "exercises": [
+        { "type": "practice", "text": "write your story poetry", "hints": true },
+        { "type": "practice", "text": "power tower require output", "hints": true },
+        { "type": "test", "text": "write your poetry with power", "hints": false, "minAccuracy": 80 }
+      ],
+      "unlockRequirement": { "lessonId": 13, "minStars": 1 }
+    },
+    {
+      "id": 15,
+      "level": 2,
+      "title": "Home and Top Together",
+      "description": "Mix home row and top row!",
+      "targetKeys": ["a", "s", "d", "f", "j", "k", "l", "q", "w", "e", "r", "t", "y", "u", "i", "o", "p"],
+      "fingers": {},
+      "exercises": [
+        { "type": "practice", "text": "treasure keyboard wonderful", "hints": true },
+        { "type": "practice", "text": "a wonderful story for your kids", "hints": true },
+        { "type": "test", "text": "the real treasure is your daily effort", "hints": false, "minAccuracy": 80 }
+      ],
+      "unlockRequirement": { "lessonId": 14, "minStars": 1 }
+    },
+    {
+      "id": 16,
+      "level": 2,
+      "title": "Top Row Sentences",
+      "description": "Type full sentences with top and home!",
+      "targetKeys": [],
+      "fingers": {},
+      "exercises": [
+        { "type": "practice", "text": "would you like to read a story", "hints": true },
+        { "type": "practice", "text": "it is quite dark outside today", "hints": true },
+        { "type": "test", "text": "would you truly like to write a story for your people", "hints": false, "minAccuracy": 80 }
+      ],
+      "unlockRequirement": { "lessonId": 15, "minStars": 1 }
+    },
+    {
+      "id": 17,
+      "level": 3,
+      "title": "C and M Drop Down",
+      "description": "Index fingers dip to C and M!",
+      "targetKeys": ["c", "m"],
+      "fingers": { "c": "left-middle", "m": "right-index" },
+      "exercises": [
+        { "type": "practice", "text": "calm came camp cream", "hints": true },
+        { "type": "practice", "text": "music climb come micro", "hints": true },
+        { "type": "test", "text": "come make calm music at camp", "hints": false, "minAccuracy": 80 }
+      ],
+      "unlockRequirement": { "lessonId": 16, "minStars": 1 }
+    },
+    {
+      "id": 18,
+      "level": 3,
+      "title": "V and N Next",
+      "description": "More bottom row keys!",
+      "targetKeys": ["v", "n"],
+      "fingers": { "v": "left-index", "n": "right-index" },
+      "exercises": [
+        { "type": "practice", "text": "van even raven seven", "hints": true },
+        { "type": "practice", "text": "never vain novel vine", "hints": true },
+        { "type": "test", "text": "seven ravens never visit the vine", "hints": false, "minAccuracy": 80 }
+      ],
+      "unlockRequirement": { "lessonId": 17, "minStars": 1 }
+    },
+    {
+      "id": 19,
+      "level": 3,
+      "title": "B Joins the Band",
+      "description": "Left index stretches to B!",
+      "targetKeys": ["b"],
+      "fingers": { "b": "left-index" },
+      "exercises": [
+        { "type": "practice", "text": "baby tribe curb bomb", "hints": true },
+        { "type": "practice", "text": "bright best club nimble", "hints": true },
+        { "type": "test", "text": "the bright blue bird built a best nest", "hints": false, "minAccuracy": 80 }
+      ],
+      "unlockRequirement": { "lessonId": 18, "minStars": 1 }
+    },
+    {
+      "id": 20,
+      "level": 3,
+      "title": "Z and X",
+      "description": "Left side bottom keys!",
+      "targetKeys": ["z", "x"],
+      "fingers": { "z": "left-pinky", "x": "left-ring" },
+      "exercises": [
+        { "type": "practice", "text": "zap maze exact relax", "hints": true },
+        { "type": "practice", "text": "zone extra fizz boxing", "hints": true },
+        { "type": "test", "text": "the fox ran in a zigzag to relax", "hints": false, "minAccuracy": 80 }
+      ],
+      "unlockRequirement": { "lessonId": 19, "minStars": 1 }
+    },
+    {
+      "id": 21,
+      "level": 3,
+      "title": "Comma and Period",
+      "description": "Learn punctuation marks!",
+      "targetKeys": [",", "."],
+      "fingers": { ",": "right-middle", ".": "right-ring" },
+      "exercises": [
+        { "type": "practice", "text": "yes, I can. no, not yet.", "hints": true },
+        { "type": "practice", "text": "run, jump, and skip. done.", "hints": true },
+        { "type": "test", "text": "well, it is cold. yes, very cold.", "hints": false, "minAccuracy": 80 }
+      ],
+      "unlockRequirement": { "lessonId": 20, "minStars": 1 }
+    },
+    {
+      "id": 22,
+      "level": 3,
+      "title": "All Letters Practice",
+      "description": "Every letter on the keyboard!",
+      "targetKeys": [],
+      "fingers": {},
+      "exercises": [
+        { "type": "practice", "text": "the quick brown fox jumps", "hints": true },
+        { "type": "practice", "text": "over the lazy dog", "hints": true },
+        { "type": "test", "text": "the quick brown fox jumps over the lazy dog", "hints": false, "minAccuracy": 80 }
+      ],
+      "unlockRequirement": { "lessonId": 21, "minStars": 1 }
+    },
+    {
+      "id": 23,
+      "level": 4,
+      "title": "Numbers 1 to 5",
+      "description": "Left hand numbers!",
+      "targetKeys": ["1", "2", "3", "4", "5"],
+      "fingers": { "1": "left-pinky", "2": "left-ring", "3": "left-middle", "4": "left-index", "5": "left-index" },
+      "exercises": [
+        { "type": "practice", "text": "1 2 3 4 5 12 34 55", "hints": true },
+        { "type": "practice", "text": "12 cats, 34 dogs, 5 birds", "hints": true },
+        { "type": "test", "text": "I saw 15 cats and 23 dogs at 4 farms", "hints": false, "minAccuracy": 80 }
+      ],
+      "unlockRequirement": { "lessonId": 22, "minStars": 1 }
+    },
+    {
+      "id": 24,
+      "level": 4,
+      "title": "Numbers 6 to 0",
+      "description": "Right hand numbers!",
+      "targetKeys": ["6", "7", "8", "9", "0"],
+      "fingers": { "6": "right-index", "7": "right-index", "8": "right-middle", "9": "right-ring", "0": "right-pinky" },
+      "exercises": [
+        { "type": "practice", "text": "6 7 8 9 0 67 89 100", "hints": true },
+        { "type": "practice", "text": "78 dogs, 90 cats, 60 birds", "hints": true },
+        { "type": "test", "text": "there are 67 fish and 890 bugs in the zoo", "hints": false, "minAccuracy": 80 }
+      ],
+      "unlockRequirement": { "lessonId": 23, "minStars": 1 }
+    },
+    {
+      "id": 25,
+      "level": 4,
+      "title": "All Numbers Mix",
+      "description": "Practice every number!",
+      "targetKeys": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"],
+      "fingers": {},
+      "exercises": [
+        { "type": "practice", "text": "1234567890 0987654321", "hints": true },
+        { "type": "practice", "text": "call 555 0123 at 9 today", "hints": true },
+        { "type": "test", "text": "in 2025, about 198 million people typed 3670 words", "hints": false, "minAccuracy": 80 }
+      ],
+      "unlockRequirement": { "lessonId": 24, "minStars": 1 }
+    },
+    {
+      "id": 26,
+      "level": 5,
+      "title": "Capital Letters",
+      "description": "Hold Shift for big letters!",
+      "targetKeys": ["A", "B", "C", "D", "E", "F"],
+      "fingers": {},
+      "exercises": [
+        { "type": "practice", "text": "Adam Ben Clara Dan Eve", "hints": true },
+        { "type": "practice", "text": "Friday is Best. Alice loves Cats.", "hints": true },
+        { "type": "test", "text": "Dear Alice, Bob and Clara ran Fast on Friday.", "hints": false, "minAccuracy": 80 }
+      ],
+      "unlockRequirement": { "lessonId": 25, "minStars": 1 }
+    },
+    {
+      "id": 27,
+      "level": 5,
+      "title": "More Capitals",
+      "description": "Practice more capital letters!",
+      "targetKeys": [],
+      "fingers": {},
+      "exercises": [
+        { "type": "practice", "text": "George Henry Ivan Julia Kim", "hints": true },
+        { "type": "practice", "text": "Monday in New York is Pleasant.", "hints": true },
+        { "type": "test", "text": "On Monday, George and Julia visited New York.", "hints": false, "minAccuracy": 80 }
+      ],
+      "unlockRequirement": { "lessonId": 26, "minStars": 1 }
+    },
+    {
+      "id": 28,
+      "level": 5,
+      "title": "Question Marks",
+      "description": "Ask questions with the ? key!",
+      "targetKeys": ["?"],
+      "fingers": {},
+      "exercises": [
+        { "type": "practice", "text": "What? Why? How? Where?", "hints": true },
+        { "type": "practice", "text": "Can you type? Yes I can.", "hints": true },
+        { "type": "test", "text": "What is your name? How old are you? Do you type fast?", "hints": false, "minAccuracy": 80 }
+      ],
+      "unlockRequirement": { "lessonId": 27, "minStars": 1 }
+    },
+    {
+      "id": 29,
+      "level": 5,
+      "title": "Exclamation and More",
+      "description": "Express yourself with ! and other marks!",
+      "targetKeys": ["!"],
+      "fingers": {},
+      "exercises": [
+        { "type": "practice", "text": "Wow! Great! Yes! Go!", "hints": true },
+        { "type": "practice", "text": "What a day! You did it! So cool!", "hints": true },
+        { "type": "test", "text": "Amazing! You are doing so well! Keep it up!", "hints": false, "minAccuracy": 80 }
+      ],
+      "unlockRequirement": { "lessonId": 28, "minStars": 1 }
+    },
+    {
+      "id": 30,
+      "level": 5,
+      "title": "Mixed Punctuation",
+      "description": "All the punctuation together!",
+      "targetKeys": [],
+      "fingers": {},
+      "exercises": [
+        { "type": "practice", "text": "Hello! How are you? I am fine.", "hints": true },
+        { "type": "practice", "text": "Wow, that is great! Is it? Yes!", "hints": true },
+        { "type": "test", "text": "Dear friend, how are you? I hope you are well! See you soon.", "hints": false, "minAccuracy": 80 }
+      ],
+      "unlockRequirement": { "lessonId": 29, "minStars": 1 }
+    },
+    {
+      "id": 31,
+      "level": 6,
+      "title": "Speed Round 1",
+      "description": "Type common words as fast as you can!",
+      "targetKeys": [],
+      "fingers": {},
+      "exercises": [
+        { "type": "practice", "text": "the and for are but not you all", "hints": false },
+        { "type": "practice", "text": "can had her was one our out day", "hints": false },
+        { "type": "test", "text": "the quick and fast runner had her day out for all to see but not you", "hints": false, "minAccuracy": 85 }
+      ],
+      "unlockRequirement": { "lessonId": 30, "minStars": 1 }
+    },
+    {
+      "id": 32,
+      "level": 6,
+      "title": "Speed Round 2",
+      "description": "Longer words, faster typing!",
+      "targetKeys": [],
+      "fingers": {},
+      "exercises": [
+        { "type": "practice", "text": "about there their which would other", "hints": false },
+        { "type": "practice", "text": "people could water first after where", "hints": false },
+        { "type": "test", "text": "about twenty people could find water there after which the other would leave first", "hints": false, "minAccuracy": 85 }
+      ],
+      "unlockRequirement": { "lessonId": 31, "minStars": 1 }
+    },
+    {
+      "id": 33,
+      "level": 6,
+      "title": "Paragraph Practice",
+      "description": "Type a full paragraph!",
+      "targetKeys": [],
+      "fingers": {},
+      "exercises": [
+        { "type": "practice", "text": "Once upon a time there was a little cat.", "hints": false },
+        { "type": "practice", "text": "The cat loved to play in the garden all day.", "hints": false },
+        { "type": "test", "text": "Once upon a time there was a little cat. The cat loved to play in the garden all day. It would chase bugs and climb trees until the sun went down.", "hints": false, "minAccuracy": 85 }
+      ],
+      "unlockRequirement": { "lessonId": 32, "minStars": 1 }
+    },
+    {
+      "id": 34,
+      "level": 6,
+      "title": "Accuracy Challenge",
+      "description": "Aim for perfect accuracy!",
+      "targetKeys": [],
+      "fingers": {},
+      "exercises": [
+        { "type": "practice", "text": "precision matters when you type every letter", "hints": false },
+        { "type": "practice", "text": "focus on each key and press it with care", "hints": false },
+        { "type": "test", "text": "Take your time and focus on hitting each key with precision. Every correct letter brings you closer to being a true typing master!", "hints": false, "minAccuracy": 90 }
+      ],
+      "unlockRequirement": { "lessonId": 33, "minStars": 1 }
+    },
+    {
+      "id": 35,
+      "level": 6,
+      "title": "Typing Master Finale",
+      "description": "The ultimate typing challenge!",
+      "targetKeys": [],
+      "fingers": {},
+      "exercises": [
+        { "type": "practice", "text": "You have learned all the keys on the keyboard.", "hints": false },
+        { "type": "practice", "text": "Now it is time to show what you can do!", "hints": false },
+        { "type": "test", "text": "Congratulations! You have completed all the typing lessons. You can now type with confidence using all the keys on the keyboard. Keep practicing every day to get faster and more accurate. You are a Typing Master!", "hints": false, "minAccuracy": 85 }
+      ],
+      "unlockRequirement": { "lessonId": 34, "minStars": 1 }
+    }
+  ],
+  "levels": [
+    { "id": 1, "name": "Home Row Foundation", "description": "Learn the home row keys", "lessons": [1, 2, 3, 4, 5, 6, 7, 8] },
+    { "id": 2, "name": "Top Row Adventure", "description": "Explore the top row", "lessons": [9, 10, 11, 12, 13, 14, 15, 16] },
+    { "id": 3, "name": "Bottom Row Quest", "description": "Conquer the bottom row", "lessons": [17, 18, 19, 20, 21, 22] },
+    { "id": 4, "name": "Number Ninja", "description": "Master the number row", "lessons": [23, 24, 25] },
+    { "id": 5, "name": "Shift and Symbols", "description": "Capitals and punctuation", "lessons": [26, 27, 28, 29, 30] },
+    { "id": 6, "name": "Speed Master", "description": "Speed and accuracy drills", "lessons": [31, 32, 33, 34, 35] }
+  ]
+}
